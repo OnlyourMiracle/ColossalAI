@@ -39,7 +39,8 @@ import os
 import random
 import time
 from multiprocessing import cpu_count
-
+import sys 
+sys.path.append('/gemini/code/ColossalAI/applications/ColossalChat')
 from coati.dataset import setup_conversation_template, supervised_tokenize_sft, tokenize_prompt_dataset, tokenize_rlhf
 from datasets import dataset_dict, load_dataset
 from transformers import AutoTokenizer
